@@ -12,10 +12,10 @@ class App extends Component {
           		<h2 className="slogan">You slogan</h2>
           	</div>
           	<div className="right">
-          		<h3 className="name">You name</h3>
-          		<h4 className="position">You position</h4>
-          		<p className="phone">You phone</p>
-          		<p className="email">You email</p>
+          		<h3 className="name">Ivan</h3>
+          		<h4 className="position">Right</h4>
+          		<p className="phone">322</p>
+          		<p className="email">You Email</p>
           		<p className="social">You social</p>
           	</div>
           </section>
