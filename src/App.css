@@ -1,0 +1,145 @@
+  @import url('https://fonts.googleapis.com/css?family=Monoton');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+  /* Change this values */
+  :root {
+  	--primary: #ff8782;
+  	--secondary: #F9F9F9;
+  	--background: #101B1C;
+  }
+  /* Change this values */
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+  .App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    color: white;
+    font-size: calc(10px + 2vmin);
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  .card {
+  	display: grid;
+    overflow: hidden;
+  	margin: 20px auto;
+  	width: 600px;
+  	height: 300px;
+  	border-radius: 2px;
+  	background-color: #ccc;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,.3);
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: 1fr;
+  }
+
+  .left, .right {
+    position: relative;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	box-sizing: border-box;
+  	padding: 30px 50px;
+  }
+  .left {
+  	background-color: var(--secondary);
+  }
+  .left:before {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    bottom: 0;
+    z-index: 100;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 280px 0 280px 60px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--primary);
+    background-color: var(--background);
+    content: '';
+    transform: translateY(-50%);
+  }
+  .left:after {
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    bottom: 0;
+    z-index: 100;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 180px 0 180px 50px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--secondary);
+    content: '';
+    transform: translateY(-50%);
+  }
+  .right {
+  	background-color: var(--background);
+  }
+  .slogan {
+    color: var(--background);
+    font-weight: 300;
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+  }
+  .name {
+  	margin: 0;
+  	color: var(--primary);
+  	text-align: left;
+    font-size: 20px;
+  }
+  .position {
+  	margin: 0;
+    margin-bottom: 30px;
+  	color: var(--secondary);
+  	text-align: left;
+    font-size: 16px;
+  }
+  .phone {
+  	margin: 0;
+  	color: var(--secondary);
+  	text-align: left;
+    font-size: 16px;
+  }
+  .email {
+  	margin: 0;
+  	color: var(--secondary);
+  	text-align: left;
+    font-size: 16px;
+  }
+  .social {
+  	margin: 0;
+  	color: var(--secondary);
+  	text-align: left;
+    font-size: 16px;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
